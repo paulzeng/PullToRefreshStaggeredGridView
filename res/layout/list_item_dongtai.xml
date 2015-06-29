@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@android:color/background_light"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <com.etsy.android.grid.util.DynamicHeightImageView
+        android:id="@+id/iv_content_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0F0F0" />
+
+    <LinearLayout
+        android:id="@+id/ll_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <com.thomas.pulltorefreshstaggeredgridview.CircleImageView
+            android:id="@+id/iv_user_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/me" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxEms="6"
+            android:singleLine="true"
+            android:text="夏天的风"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
